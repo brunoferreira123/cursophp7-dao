@@ -19,8 +19,19 @@
 	
 	//Carrega um usuário usando o login e a senha
 	
-	$usuario = new Usuario();
-	$usuario->login("root","!@#$%");
+	//$usuario = new Usuario();
+	//$usuario->login("root","!@#$%");
+	//echo $usuario;
+	
+	//Criando um novo usuario
+	
+	//$aluno = new Usuario("aluno","@lun0");
+	//$aluno->insert();
+	//echo $aluno;
+	
+	$usuario = new usuario();
+	$usuario -> loadbyId(40);
+	$usuario -> update("professor","!@#$%¨&");
 	echo $usuario;
 	/*
 	$sql = new Sql();
